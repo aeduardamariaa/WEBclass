@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  height: 70px;
+  background-color: rgb(112, 32, 85);
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+nav{
+  background-color:rgb(112, 32, 85);
+}
+
+nav ul {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  padding: 0 30px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+nav li:hover {
+  cursor: pointer;
+  color: rgb(248, 144, 81);
+}
+
+footer{
+  background-color:  rgb(112, 32, 85);
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  color: white;
+}
+
+article{
+  background-color: rgb(85, 85, 207);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 700px;
+  justify-items: center;
+  padding: 10px;
+  gap: 30px;
+  top: 10px;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+
+aside{
+  background-color: blueviolet;
+  position: relative;
+  width: 200px;
+  padding: 10px;
+  top: 10px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+body{
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>;
+  font-style: normal; */
+}
+.centralizar{
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 auto;
+  display: flex;
+}
+
+section {
+    background-color: orangered;
+    width: 80%;
+    height: auto;
+}
+/* #section1{
+  background-color: orangered;
+  margin-top: 50px;
+  height: 200px;
+}
+#section2{
+  background-color: orangered;
+  margin-top: 50px;
+
+}
+#section3{
+  background-color: orangered;
+  margin-top: 50px;
+} */
+figure, details{
+  background-color: green;
+  width: 100%;
+  margin: 0;
+}
+details{
+  margin-top: 50px;
+}
+.logo-header{
+  width: 70px;
+  margin:0px 400px 0px 200px;
+}
+
+.imagem-container {
+  position: relative;
+  overflow: hidden; /* Garante que o botão não ultrapasse os limites da imagem */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imagem-container:hover .overlay {
+  opacity: 1;
+}
+
+.imagem-principal {
+  width: 100%;
+  height: auto;
+}
+
+.botao-sobre-imagem{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: #fff;
+  color:white;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgb(248, 144, 81);
+  border-radius: 10px;
+}
+
+.imagem-container:hover .botao-sobre-imagem {
+  opacity: 1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
